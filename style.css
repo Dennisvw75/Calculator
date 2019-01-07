@@ -3,5 +3,37 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 4rem;
+  background: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-auto-rows: 80px 80px;
+  justify-content: center;
+  grid-template-areas: 'header header header header' 'main main main main' 'main main main main' 'main main main main' 'main main main main';
+}
+
+.item-header {
+  grid-area: header;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color: black;
+  color: #fff;
+  text-align: right;
+}
+
+.btn {
+  background-color: dimgray;
+  border: none;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin: 4px 2px;
+  border-radius: 50%;
 }
