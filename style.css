@@ -16,7 +16,7 @@ body {
   grid-template-columns: 80px 80px 80px 80px;
   grid-auto-rows: 80px 80px;
   justify-content: center;
-  grid-template-areas: 'header header header header' 'main main main main' 'main main main main' 'main main main main' 'main main main main';
+  grid-template-areas: 'header header header header' 'main main main main' 'main main main main' 'main main main main' 'main main main main' 'main main main main';
 }
 
 .item-header {
@@ -36,4 +36,20 @@ body {
   text-align: center;
   margin: 4px 2px;
   border-radius: 50%;
+  font-size: 2rem;
+  outline: none;
+}
+
+.btn-zero {
+  grid-area: 6 / span 2;
+  border-radius: 35px;
+}
+
+.silver {
+  background-color: #d4d4d2;
+  color: black;
+}
+
+.orange {
+  background-color: #ff9500;
 }
